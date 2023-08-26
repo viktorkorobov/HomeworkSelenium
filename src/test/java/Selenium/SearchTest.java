@@ -1,8 +1,9 @@
+package Selenium;
 
 import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.Dimension;
 import org.testng.annotations.Test;
-import po.SearchPage;
+import Selenium.po.SearchPage;
 
 public class SearchTest extends BaseTest {
 

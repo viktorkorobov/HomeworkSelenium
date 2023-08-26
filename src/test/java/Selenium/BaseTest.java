@@ -1,10 +1,11 @@
-import org.openqa.selenium.Dimension;
+package Selenium;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import static config.WebDriverInit.closeDriver;
-import static config.WebDriverInit.getDriver;
+import static Selenium.config.WebDriverInit.closeDriver;
+import static Selenium.config.WebDriverInit.getDriver;
 
 public class BaseTest {
     WebDriver driver=null;

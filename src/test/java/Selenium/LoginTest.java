@@ -1,9 +1,11 @@
-import builder.LoginPageBuilder;
+package Selenium;
+
+import Selenium.builder.LoginPageBuilder;
 import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.Dimension;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import po.LoginPage;
+import Selenium.po.LoginPage;
 
 public class LoginTest extends BaseTest {
 

@@ -1,23 +1,19 @@
-package base;
+package Selenium.base;
 
+import Selenium.config.WebDriverInit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.swing.*;
-
-import static config.WebDriverInit.*;
-
 public class BaseMethod {
     protected Actions getAction(){
-        return new Actions(getDriver());
+        return new Actions(WebDriverInit.getDriver());
     }
     public WebDriverWait getWait(){
-        return new WebDriverWait(getDriver(), 10);
+        return new WebDriverWait(WebDriverInit.getDriver(), 10);
     }
 
     protected void click(By locator){

@@ -1,9 +1,11 @@
+package Selenium;
+
 import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import po.DemoqaPage;
+import Selenium.po.DemoqaPage;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
