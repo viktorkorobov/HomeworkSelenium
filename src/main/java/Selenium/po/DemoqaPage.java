@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 public class DemoqaPage extends BaseMethod {
     /*3*/
     private final By textFromFrame = By.xpath("/html/body/p");
-
     public String getTextFromFrame(){
         return getTextFromElement(textFromFrame);
     }

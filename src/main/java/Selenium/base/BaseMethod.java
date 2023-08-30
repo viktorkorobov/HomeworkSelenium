@@ -7,13 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static java.time.Duration.ofSeconds;
 
 public class BaseMethod {
     protected Actions getAction(){
         return new Actions(WebDriverInit.getDriver());
     }
     public WebDriverWait getWait(){
-        return new WebDriverWait(WebDriverInit.getDriver(), 10);
+        return new WebDriverWait(WebDriverInit.getDriver(), ofSeconds(10));
     }
 
     protected void click(By locator){

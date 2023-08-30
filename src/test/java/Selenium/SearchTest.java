@@ -7,8 +7,8 @@ import Selenium.po.SearchPage;
 
 public class SearchTest extends BaseTest {
 
-    @Test(groups = {"Regression"})
-    void shouldBeVisibleResultText(String result){
+    @Test
+    void shouldBeVisibleResultText(){
         driver.get("https://ru.wikipedia.org/");
         driver.manage().window().setSize(new Dimension(1920,1080));
         new SearchPage()
